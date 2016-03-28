@@ -1,0 +1,10 @@
+---
+title: "About"
+author: "Nanjundamurthy Rachana"
+date: "March 27, 2016"
+output: html_document
+---
+
+
+This app is used to visualize the relationships between the different parameters used in the Auto data from ISLR data package. 
+By choosing the different options, we can see how the y variable varies and this could help us narrow down if we need to analyze any further. 

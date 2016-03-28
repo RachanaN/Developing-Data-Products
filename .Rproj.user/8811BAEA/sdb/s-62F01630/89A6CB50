@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"About\"\nauthor: \"Nanjundamurthy Rachana\"\ndate: \"March 27, 2016\"\noutput: html_document\n---\n\n\nThis app is used to visualize the relationships between the different parameters used in the Auto data from ISLR data package. \nBy choosing the different options, we can see how the y variable varies and this could help us narrow down if we need to analyze any further. ",
+    "created" : 1459127059589.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "939545789",
+    "id" : "89A6CB50",
+    "lastKnownWriteTime" : 1459127411,
+    "last_content_update" : 1459127411043,
+    "path" : "~/Developing Data Products/About.Rmd",
+    "project_path" : "About.Rmd",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle       : Creating Plots with Auto Data in ISLR Data\nsubtitle    : Course Project\nauthor      : Rachana\njob         : Research\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Introduction\n\n1. First Slides on Slidify\n2. Written using R Markdown\n3. For Course Project!\n\n\n--- .class #id \n\n## Slide 2\n\nData Used: Auto Data from ISLR dataset\n\nA Brief View on the Data\n\nThis dataset was taken from the StatLib library which is maintained at Carnegie Mellon University. The dataset was used in the 1983 American Statistical Association Exposition.\n\nA data frame with 392 observations on the following 9 variables.\n```{r, echo = TRUE}\nlibrary(slidify)\nlibrary(knitr)\nlibrary(ggplot2)\nlibrary(ISLR)\ndata(Auto)\n```\n\n\n\n--- \n## Slide 3: About the Data\n\n```{r, echo = TRUE}\nnames(Auto)\n```\nmpg - miles per gallon\n\ncylinders - Number of cylinders between 4 and 8\n\ndisplacement - Engine displacement (cu. inches)\n\nhorsepower - Engine horsepower\n\nweight - Vehicle weight (lbs.)\n\nacceleration - Time to accelerate from 0 to 60 mph (sec.)\n\nyear - Model year (modulo 100)\n\norigin - Origin of car (1. American, 2. European, 3. Japanese)\n\nname - Vehicle name\n\n---\n## Slide 4: Intent\n\nHere, we are just building a small app on Shiny to visualize the relationships between different variables in the Auto data. \nWe have created three variables for input - X variable, Y variable and C variable. These represent the X- axis, Y- axis and Color inputs for the output.\nSample:\n```{r, echo = FALSE}\nggplot(data = Auto, mapping = aes(y = mpg, x = cylinders)) + geom_point(aes(color = cylinders))\n```\n\n---\n## Slide 5 : Fifth Slide\n\nAs can be seen different variables can be selected and these determine the plots. \n\nThank You!\n\n",
+    "created" : 1459118613152.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2998531471",
+    "id" : "8D41027",
+    "lastKnownWriteTime" : 1459121971,
+    "last_content_update" : 1459121971600,
+    "path" : "~/Developing Data Products/Course Project Slides in Slidify/index.Rmd",
+    "project_path" : "Course Project Slides in Slidify/index.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

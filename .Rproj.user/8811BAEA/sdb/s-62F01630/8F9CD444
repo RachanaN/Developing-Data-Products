@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\nlibrary(ggplot2)\nlibrary(ISLR)\ndata(Auto)\nlibrary(markdown)\nlist <- as.list(names(Auto))\ncolorList <- as.list(c(\"mpg\", \"horsepower\", \"origin\", \"year\", \"cylinders\"))\n\nshinyUI(fluidPage(\n\ntitlePanel(\"Application for Creating plots with the Auto Data set in the ISLR package\"),\n  includeMarkdown(\"About.md\"),\n\n  # Sidebar with a slider input for number of bins\n  sidebarLayout(\n    sidebarPanel( h4(strong(\"Configure Plot Options\")),\n                 br(),\n                 \n                 selectInput( \"X\",\n                             label = strong(\"Choose X-Axis Variable\"),\n                             choices = as.list(names(Auto)),\n                             selected = 'mpg'\n                             ),\n                 \n                 selectInput(\"Y\",\n                              label = strong(\"Choose Y-Axis Variable\"),\n                              choices = as.list(names(Auto)),\n                              selected = 'horsepower'\n                              ),\n                 \n                 selectInput(\"C\",\n                             label = strong(\"Select Color Variable\"),\n                             choices = colorList,\n                             selected = 'cylinders'\n                             \n                \n    ),       \n    br(),\n    strong(\"How to use the App: \"),\n    br()\n   \n    ),\n   \n   \n   \n  \n   \n    mainPanel(\n      plotOutput(\"Auto_plot\"), \n      br(),\n      \n     strong(\"Correlation between the selected x and y variables - using Reactive Function\"),\n    textOutput(\"Auto_text\")\n    \n    )\n    \n    \n    \n    \n\n))\n\n\n)",
+    "created" : 1459032664865.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2272201026",
+    "id" : "8F9CD444",
+    "lastKnownWriteTime" : 1459131578,
+    "last_content_update" : 1459131578393,
+    "path" : "~/Developing Data Products/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
